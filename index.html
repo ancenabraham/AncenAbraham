@@ -5,200 +5,241 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ancen Abraham - Resume</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            background-color: #f5f5f5;
-            padding: 40px 20px;
-        }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+  }
 
-        .page {
-            width: 794px;
-            min-height: 1123px;
-            margin: 0 auto;
-            background: white;
-            padding: 64px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+  /* Page Container */
+  .page {
+    width: 794px;
+    min-height: 1123px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 64px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
-        /* Header */
-        header {
-            margin-bottom: 32px;
-        }
+  /* Header */
+  header {
+    margin-bottom: 32px;
+  }
 
-        h1 {
-            font-size: 32px;
-            font-weight: 600;
-            letter-spacing: -0.5px;
-            margin-bottom: 8px;
-            line-height: 1.2;
-            color: #000;
-        }
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    color: #000;
+  }
 
-        .subtitle {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 24px;
-            letter-spacing: 0.5px;
-        }
+  .subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
 
-        .contact-info {
-            font-size: 12px;
-            color: #333;
-            line-height: 1.6;
-        }
+ .contact-info a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-        .contact-info p {
-            margin-bottom: 4px;
-        }
+.contact-info a:hover {
+  text-decoration: underline;
+}
 
-        /* Sections */
-        section {
-            margin-bottom: 32px;
-        }
+  /* Sections */
+  section {
+    margin-bottom: 32px;
+  }
 
-        h2 {
-            font-size: 14px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 12px;
-            padding-bottom: 4px;
-            border-bottom: 1px solid #d1d1d1;
-            color: #000;
-        }
+  h2 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #d1d1d1;
+    color: #000;
+  }
 
-        p {
-            font-size: 12px;
-            color: #333;
-            line-height: 1.6;
-        }
+  p {
+    font-size: 12px;
+    color: #333;
+    line-height: 1.6;
+  }
 
-        /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px 32px;
-            font-size: 12px;
-            color: #333;
-        }
+  /* Skills */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px 32px;
+    font-size: 12px;
+  }
 
-        /* Tools Grid */
-        .tools-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 48px;
-            font-size: 12px;
-            color: #333;
-        }
+  /* Tools */
+  .tools-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    font-size: 12px;
+  }
 
-        .tools-column > div {
-            margin-bottom: 8px;
-        }
+  .tools-column > div {
+    margin-bottom: 8px;
+  }
 
-        .tools-section-title {
-            font-weight: 600;
-            margin-bottom: 4px;
-        }
+  .tools-section-title {
+    font-weight: 600;
+  }
 
-        /* Work Experience */
-        .job {
-            margin-bottom: 20px;
-        }
+  /* Experience */
+  .job {
+    margin-bottom: 20px;
+  }
 
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 4px;
-        }
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+  }
 
-        .job-title {
-            font-size: 13px;
-            font-weight: 600;
-            color: #000;
-        }
+  .job-title {
+    font-size: 13px;
+    font-weight: 600;
+  }
 
-        .job-date {
-            font-size: 11px;
-            color: #666;
-        }
+  .job-date {
+    font-size: 11px;
+    color: #666;
+  }
 
-        .company-name {
-            font-size: 12px;
-            font-weight: 500;
-            color: #333;
-        }
+  .company-name {
+    font-size: 12px;
+    font-weight: 500;
+  }
 
-        .job-location {
-            font-size: 11px;
-            color: #666;
-            margin-bottom: 8px;
-        }
+  .job-location {
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 8px;
+  }
 
-        ul {
-            margin-left: 20px;
-            font-size: 12px;
-            color: #333;
-            line-height: 1.6;
-        }
+  ul {
+    margin-left: 18px;
+    font-size: 12px;
+    line-height: 1.6;
+  }
 
-        ul li {
-            margin-bottom: 4px;
-        }
+  ul li {
+    margin-bottom: 4px;
+  }
 
-        /* Education */
-        .education-title {
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 4px;
-            color: #000;
-        }
+  /* Education */
+  .education-title {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
 
-        .education-school,
-        .education-details {
-            font-size: 12px;
-            color: #333;
-        }
+  .education-details {
+    font-size: 12px;
+    color: #666;
+  }
 
-        .education-details {
-            color: #666;
-        }
+  /* Languages */
+  .languages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    font-size: 12px;
+  }
 
-        /* Languages */
-        .languages-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-            font-size: 12px;
-            color: #333;
-        }
+  /* ===================== */
+  /* RESPONSIVE BREAKPOINTS */
+  /* ===================== */
 
-        /* Print Styles */
-        @media print {
-            body {
-                background: white;
-                padding: 0;
-            }
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .page {
+      width: 90%;
+      padding: 48px;
+    }
+  }
 
-            .page {
-                width: 100%;
-                margin: 0;
-                padding: 64px;
-                box-shadow: none;
-            }
-        }
+  /* Mobile */
+  @media (max-width: 768px) {
+    body {
+      padding: 20px 12px;
+    }
 
-        @page {
-            size: A4;
-            margin: 0;
-        }
-    </style>
+    .page {
+      width: 100%;
+      padding: 32px 20px;
+      min-height: auto;
+    }
+
+    h1 {
+      font-size: 26px;
+    }
+
+    .subtitle {
+      font-size: 13px;
+    }
+
+    .skills-grid,
+    .languages-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .tools-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .job-header {
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .job-date {
+      font-size: 10px;
+    }
+  }
+
+  /* Print */
+  @media print {
+    body {
+      background: white;
+      padding: 0;
+    }
+
+    .page {
+      width: 100%;
+      margin: 0;
+      padding: 64px;
+      box-shadow: none;
+    }
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+</style>
+
 </head>
 <body>
     <div class="page">
@@ -209,7 +250,23 @@
             
             <div class="contact-info">
                 <p>Chennai, India | +91 75501 43328 | ancenabraham1997@gmail.com</p>
-                <p>LinkedIn | Behance | Portfolio</p>
+                <p class="links">
+  LinkedIn:
+  <a href="https://www.linkedin.com/in/ancen-abraham-21b6a8188" target="_blank">
+    linkedin.com/in/ancen-abraham
+  </a>
+  <br>
+  Behance:
+  <a href="https://www.behance.net/ancenabraham49" target="_blank">
+    behance.net/ancenabraham49
+  </a>
+  <br>
+  Portfolio:
+  <a href="https://portfolio.adobe.com/45681a53-7fbf-4312-b1b5-28593ba4a6f0/editor/" target="_blank">
+    portfolio.adobe.com
+  </a>
+</p>
+
                 <p>Visa Status: Open to relocation (International)</p>
             </div>
         </header>
